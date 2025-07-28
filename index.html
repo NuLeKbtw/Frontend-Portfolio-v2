@@ -18,8 +18,7 @@
     <div class="content">
       <p>
         <strong>Gabriel</strong> <small>@nulekbtw</small>
-        <small id="date"></small>
-        <small id="minutes-ago"></small>
+        <small id="minutes-ago">47min</small>
         <br />
         I'm building this code from scratch, and it will be published on GitHub upon completion.
       </p>
@@ -27,25 +26,5 @@
   </div>
 
 </article>
-
-<script>
-  // Ustaw datę początkową (np. publikacji posta)
-  const postDate = new Date();
-
-  function updateTime() {
-    const now = new Date();
-    const diffMs = now - postDate;
-    const diffMins = Math.floor(diffMs / 60000);
-
-    // Format daty: np. 28.07.2025, 14:35
-    const options = { day: '2-digit', month: '2-digit', year: 'numeric', hour: '2-digit', minute: '2-digit' };
-    document.getElementById('date').textContent = postDate.toLocaleString('pl-PL', options);
-
-    document.getElementById('minutes-ago').textContent = `(${diffMins} min temu)`;
-  }
-
-  updateTime();
-  setInterval(updateTime, 60000);
-</script>
 </body>
 </html>
