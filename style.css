@@ -1,0 +1,22 @@
+
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: gray;
+}
+#media {
+  width: fit-content;
+  height: fit-content;
+  padding: 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 0 40px 10px #48abe0;
+}
