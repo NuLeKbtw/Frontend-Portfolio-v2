@@ -167,4 +167,18 @@ body {
 .project1, .project2, .project3 {
   max-width: 300px;
   padding: 20px;
+  background: rgba(128, 128, 128, 0.575);
+  height: 300px;
+}
+.buttonproject2 { 
+  text-align: center;
+}
+.buttonp1, .buttonp2, .buttonp3 { 
+  padding: 1em 2em;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  overflow: hidden;
+  border-radius: 8px;
 }
