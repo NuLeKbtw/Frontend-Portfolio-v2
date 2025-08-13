@@ -1,17 +1,14 @@
 ## Personal Portfolio Website
-
-This is a personal portfolio website created entirely from scratch using only **HTML** and **CSS**. Unlike my previous projects, this portfolio does **not** use any frameworks like Bootstrap—every element and style has been handcrafted to ensure a unique and fully customized design.
-
-The project showcases my skills in web development and design, focusing on clean code, responsive layouts, and modern aesthetics. All components, animations, and layouts have been built manually to demonstrate my understanding of core web technologies.
-
-In the future, I plan to enhance this portfolio by adding **JavaScript** for interactive features and dynamic content, further improving the user experience.
+This is a fully custom personal portfolio website built entirely from scratch using HTML, CSS, and JavaScript — without relying on any external frameworks or libraries. Every element, style, and feature has been handcrafted to ensure a unique design and complete control over the codebase.
+The project highlights my front-end development skills, focusing on clean code, responsive layouts, and modern aesthetics. With the use of vanilla JavaScript, the site includes dynamic features and interactive components that enhance the overall user experience.
 
 ---
 
-**Key Features:**
-- 100% custom HTML and CSS (no frameworks)
-- Responsive design for all devices
+🔧 **Key Features:**
+- 100% custom HTML, CSS, and JavaScript (no frameworks)
+- Responsive design across all devices
 - Clean, semantic code structure
-- Ready for future JavaScript enhancements
+- Interactive elements built with vanilla JavaScript (e.g., animations, navigation, forms)
+- Scalable foundation for future enhancements and new features
 
-Feel free to explore the code and see how everything was built from the
+This portfolio not only showcases my technical abilities but also reflects my attention to detail and user-centered design approach. Feel free to explore the code and see how everything was built from the ground up.
