@@ -61,8 +61,8 @@ body {
 .name { 
   font-size: 48px;
 }
-.bout {
-  font-size: 36px;
+.about {
+  font-size: 24px;
 }
 .html-item, .css-item ,.js-item { 
   display: flex;
@@ -151,27 +151,33 @@ body {
 .titlep{
   font-size: 42px;
   font-weight: bold;
+    padding: 20px;
+    margin-bottom: 100px;
 }
 .projcard{ 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 50px;
+  gap: 100px;
   text-align: center;
   align-items: stretch;
+  padding-bottom: 50px;
 }
 .project1 { 
-  border: 5px solid red;
+  box-shadow: 0 0 50px rgba(199,87,87,1);
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
 }
 .project2 { 
-  border: 5px solid blue;
+  box-shadow: 0 0 50px rgba(199,87,87,1);
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
 }
 .project3 { 
-  border: 5px solid brown;
+  box-shadow: 0 0 50px rgba(199,87,87,1);
+  border-radius: 30px;
   display: flex;
   flex-direction: column;
 }

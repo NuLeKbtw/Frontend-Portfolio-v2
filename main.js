@@ -4,29 +4,28 @@ let namemy = document.querySelector(".name")
 
 
 namemy.addEventListener ("mouseenter", function() {
-    namemy.style.color = "red"
     namemy.style.transition = "0.5s"
     namemy.style.fontSize = "52px"
 
 });
 
 namemy.addEventListener ("mouseleave", function() {
-    namemy.style.color = "white"
     namemy.style.transition = "0.5s"
     namemy.style.fontSize = "48px"
     
 });
 
+
 let melogo = document.querySelector(".logo")
 
 melogo.addEventListener ("mouseenter", function() {
     melogo.style.transition = "0.5s"
-    melogo.style.boxShadow = "0px 0px 20px red";
+    melogo.style.boxShadow = "0px 0px 20px white";
 });
 
 melogo.addEventListener ("mouseleave", function() {
     melogo.style.transition = "0.5s"
-    melogo.style.boxShadow = "0px 0px 0px red";
+    melogo.style.boxShadow = "0px 0px 0px white";
 });
 // Counter HTML
 let liczba = 0; 
@@ -71,5 +70,37 @@ const Intervaljs = setInterval(() => {
     }
 }, 50);
 
+let project1 = document.querySelector(".project1");
+let project2 = document.querySelector(".project2");
+let project3 = document.querySelector(".project3");
 
 
+project1.addEventListener ("mouseenter", function() {
+    project1.style.transition = "0.5s"
+    project1.style.scale = "110%"
+});
+
+project1.addEventListener ("mouseleave", function() {
+    project1.style.transition = "0.5s"
+    project1.style.scale = "100%"
+});
+
+project2.addEventListener ("mouseenter", function() {
+    project2.style.transition = "0.5s"
+    project2.style.scale = "110%"
+});
+
+project2.addEventListener ("mouseleave", function() {
+    project2.style.transition = "0.5s"
+    project2.style.scale = "100%"
+});
+
+project3.addEventListener ("mouseenter", function() {
+    project3.style.transition = "0.5s"
+    project3.style.scale = "110%"
+});
+
+project3.addEventListener ("mouseleave", function() {
+    project3.style.transition = "0.5s"
+    project3.style.scale = "100%"
+});
