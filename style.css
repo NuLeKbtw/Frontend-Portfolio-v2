@@ -4,7 +4,7 @@ body {
   margin: 0; /* remove default page margin to eliminate unwanted outer spacing */
   font-family: 'Open Sans', sans-serif;
   background-color: #f4f4f4;
-    overflow-x: hidden; /* blokuje scrollowanie w poziomie */
+  overflow-x: hidden; /* blokuje scrollowanie w poziomie */
   width: 100%; /* upewnij się, że body ma max 100% */
 }
 
@@ -148,30 +148,45 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+.titlep{
+  font-size: 42px;
+  font-weight: bold;
+}
 .projcard{ 
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   gap: 50px;
   text-align: center;
+  align-items: stretch;
 }
 .project1 { 
   border: 5px solid red;
+  display: flex;
+  flex-direction: column;
 }
 .project2 { 
   border: 5px solid blue;
+  display: flex;
+  flex-direction: column;
 }
 .project3 { 
   border: 5px solid brown;
+  display: flex;
+  flex-direction: column;
 }
 .project1, .project2, .project3 {
   max-width: 300px;
   padding: 20px;
   background: rgba(128, 128, 128, 0.575);
-  height: 300px;
+  min-height: 300px;
+  position: relative;
 }
-.buttonproject2 { 
-  text-align: center;
+.buttonproject1,
+.buttonproject2,
+.buttonproject3 {
+  margin-top: auto;
+  padding-top: 20px;
 }
 .buttonp1, .buttonp2, .buttonp3 { 
   padding: 1em 2em;
@@ -179,6 +194,26 @@ body {
   color: white;
   border: none;
   border-radius: 8px;
-  overflow: hidden;
-  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.2s;
+  width: 200px;
+}
+.buttonp1:hover, .buttonp2:hover, .buttonp3:hover {
+  transform: translateY(-2px);
+}
+.project1title, .project2title, .project3title {
+  font-size: 24px;
+  font-weight: bold;
+}
+.plicon {
+  font-size: 42px;
+  align-items: center;
+  justify-content: center;
+}
+a { 
+  text-decoration: none;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 500;
 }
