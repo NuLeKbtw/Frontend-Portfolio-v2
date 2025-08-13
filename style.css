@@ -141,6 +141,8 @@ body {
 }
 
 .projects { 
+  color: #fff;
+  background: linear-gradient(180deg, darkblue 0%,  #6f00ff 100%);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,7 +152,7 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  gap: 15px;
+  gap: 50px;
   text-align: center;
 }
 .project1 { 
@@ -163,5 +165,6 @@ body {
   border: 5px solid brown;
 }
 .project1, .project2, .project3 {
+  max-width: 300px;
   padding: 20px;
 }
