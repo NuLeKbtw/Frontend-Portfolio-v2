@@ -104,3 +104,34 @@ project3.addEventListener ("mouseleave", function() {
     project3.style.transition = "0.5s"
     project3.style.scale = "100%"
 });
+
+let skill = document.querySelectorAll("#skills")
+let htmlskl = document.querySelector(".html-name")
+let cssskl = document.querySelector(".css-name")
+let jsskl = document.querySelector(".js-name")
+
+
+skill.forEach(skills => {
+    skills.addEventListener("mouseenter", function(){
+        this.style.transition = "0.5s"
+        this.style.scale = "110%"
+        htmlskl.style.textShadow = "0 0 20px orange"
+        htmlskl.style.transition = "0.5s"
+        cssskl.style.textShadow = "0 0 20px cyan"
+        cssskl.style.transition = "0.5s"
+        jsskl.style.textShadow = "0 0 20px yellow"
+        jsskl.style.transition = "0.5s"
+
+    })
+    skills.addEventListener("mouseleave", function(){
+        this.style.transition = "0.5s"
+        this.style.scale = "100%"
+        htmlskl.style.textShadow = "0 0 0 orange"
+        htmlskl.style.transition = "0.5s"
+        cssskl.style.textShadow = "0 0 0 cyan"
+        cssskl.style.transition = "0.5s"
+        jsskl.style.textShadow = "0 0 0 orange"
+        jsskl.style.transition = "0.5s"
+    })
+})
+
