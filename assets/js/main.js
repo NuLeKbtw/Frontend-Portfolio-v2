@@ -135,3 +135,43 @@ skill.forEach(skills => {
     })
 })
 
+$('#name').hover(function() {
+    $(this)
+    .css('width', '300%')
+    .css('transition', '0.5s')
+    .css('cursor', 'pointer')
+    },
+    function(){
+    $(this)
+    .css('width', '200%')
+    .css('transition', '0.5s')
+    .css('cursor', 'pointer')
+})
+
+$('#e-mail').hover(function() {
+    $(this)
+    .css('width', '300%')
+    .css('transition', '0.5s')
+    .css('cursor', 'pointer')
+    },
+    function(){
+    $(this)
+    .css('width', '200%')
+    .css('transition', '0.5s')
+    .css('cursor', 'pointer')
+})
+
+$('.sendd').hover(function(){
+    $(this)
+    .css({
+        'width': '300px',
+        'transition': '0.5s',
+    })
+    },
+    function(){
+        $(this).css({
+            'width': '200px',
+            'transition': '0.5s',
+        })
+    }
+)

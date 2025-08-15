@@ -1,14 +1,12 @@
-/* ===== Base / Reset ===== */
 html, body { height: 100%; }
 body {
-  margin: 0; /* remove default page margin to eliminate unwanted outer spacing */
+  margin: 0; 
   font-family: 'Open Sans', sans-serif;
   background-color: #f4f4f4;
-  overflow-x: hidden; /* blokuje scrollowanie w poziomie */
-  width: 100%; /* upewnij się, że body ma max 100% */
+  overflow-x: hidden; 
+  width: 100%; 
 }
 
-/* ===== Navbar ===== */
 .navbar {
   position: fixed;
   top: 0;
@@ -18,7 +16,8 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 12px 16px; /* reduced to avoid excess height */
+  padding: 12px 16px;
+  z-index: 1;
 }
 
 .navbar ul {
@@ -28,42 +27,45 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 0; /* no spacing between items */
+  gap: 0; 
 }
 
 .navbar li {
-  margin: 10px; /* remove li margins for zero gaps */
+  margin: 10px; 
   font-size: 24px;
 }
 
 .navbar a {
   display: block;
-  padding: 10px 0; /* no horizontal padding so items touch each other */
+  padding: 10px 0; 
   color: #fff;
   text-decoration: none;
   font-weight: bold;
 }
 
-/* ===== Sections ===== */
 .aboutme {
   color: #fff;
-  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(199,87,87,1) 100%);
+  background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgb(179, 41, 41) 100%);
   padding: 20px;
-  margin-top: 90px; /* offset for fixed navbar */
+  margin-top: 90px; 
   align-items: center;
   justify-content: center;
   text-align: center;
 } 
+
 .aboutme img{ 
   border-radius: 50%;
   width: 350px;
 }
+
 .name { 
   font-size: 48px;
 }
+
 .about {
   font-size: 24px;
 }
+
 .html-item, .css-item ,.js-item { 
   display: flex;
   align-items: center;
@@ -78,13 +80,14 @@ body {
   }
 
 .skills {
-  background: linear-gradient(180deg, rgba(199,87,87,1)0%, darkblue 100%);
+  background: linear-gradient(180deg, rgb(179, 41, 41) 0%, darkblue 100%);
   color: white;
   font-size: 24px;
   font-weight: bold;
   padding: 10px;
   width: 100%;
 }
+
 .progress-container { 
   width: 100%;
   background-color: grey;
@@ -92,26 +95,29 @@ body {
   border-radius: 7px;
   max-width: 500px;
   margin-right: 100px;
-
 }
+
 .progress-container .progressbarhtml { 
   width: 0%;
   height: 100%;
   border-radius: 7px;
   animation: progress-animationhtml 5s forwards;
 }
+
 .progress-container .progressbarcss { 
   width: 0%;
   height: 100%;
   border-radius: 7px;
   animation: progress-animationcss 5s forwards;
 }
+
 .progress-container .progressbarjs { 
   width: 0%;
   height: 100%;
   border-radius: 7px;
   animation: progress-animationjs 5s forwards;
 }
+
 .progress-container #progress-value{
     position: relative;
     left: 102%;
@@ -148,12 +154,14 @@ body {
   justify-content: center;
   flex-direction: column;
 }
+
 .titlep{
   font-size: 42px;
   font-weight: bold;
     padding: 20px;
     margin-bottom: 100px;
 }
+
 .projcard{ 
   display: flex;
   flex-direction: row;
@@ -163,24 +171,28 @@ body {
   align-items: stretch;
   padding-bottom: 50px;
 }
+
 .project1 { 
   box-shadow: 0 0 50px rgba(199,87,87,1);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
 }
+
 .project2 { 
   box-shadow: 0 0 50px rgba(199,87,87,1);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
 }
+
 .project3 { 
   box-shadow: 0 0 50px rgba(199,87,87,1);
   border-radius: 30px;
   display: flex;
   flex-direction: column;
 }
+
 .project1, .project2, .project3 {
   max-width: 300px;
   padding: 20px;
@@ -188,12 +200,14 @@ body {
   min-height: 300px;
   position: relative;
 }
+
 .buttonproject1,
 .buttonproject2,
 .buttonproject3 {
   margin-top: auto;
   padding-top: 20px;
 }
+
 .buttonp1, .buttonp2, .buttonp3 { 
   padding: 1em 2em;
   background: #111;
@@ -205,21 +219,99 @@ body {
   transition: transform 0.2s;
   width: 200px;
 }
+
 .buttonp1:hover, .buttonp2:hover, .buttonp3:hover {
   transform: translateY(-2px);
 }
+
 .project1title, .project2title, .project3title {
   font-size: 24px;
   font-weight: bold;
 }
+
 .plicon {
   font-size: 42px;
   align-items: center;
   justify-content: center;
 }
+
 a { 
   text-decoration: none;
   color: white;
   font-family: 'Open Sans', sans-serif;
   font-weight: 500;
+}
+
+.contact { 
+  color: #fff;
+  background: linear-gradient(180deg, #6f00ff 0%,  #DC6C01 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.titlec{
+  margin-top: 150px;
+  font-size: 48px;
+  padding: 20px;
+}
+
+@keyframes boxShadowColorChange {
+  0%   { box-shadow: 0 0 15px rgb(255, 0, 0); }     /* Red */
+  10%  { box-shadow: 0 0 15px rgb(255, 128, 0); }   /* Orange */
+  20%  { box-shadow: 0 0 15px rgb(255, 255, 0); }   /* Yellow */
+  30%  { box-shadow: 0 0 15px rgb(128, 255, 0); }   /* Light green */
+  40%  { box-shadow: 0 0 15px rgb(0, 255, 0); }     /* Green */
+  50%  { box-shadow: 0 0 15px rgb(0, 255, 128); }   /* Turquoise */
+  60%  { box-shadow: 0 0 15px rgb(0, 255, 255); }   /* Cyan */
+  70%  { box-shadow: 0 0 15px rgb(0, 128, 255); }   /* Light blue */
+  80%  { box-shadow: 0 0 15px rgb(0, 0, 255); }     /* Blue */
+  90%  { box-shadow: 0 0 15px rgb(128, 0, 255); }   /* Violet */
+  100% { box-shadow: 0 0 15px rgb(255, 0, 0); }     /* Back to Red */
+}
+
+.inputsc{
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+#name, #e-mail{
+  box-shadow: 0 0 20px;
+  border: none;
+  border-radius: 24px;
+  height: 30px;
+  width: 200%;
+  padding: 15px 20px ;
+  background: rgba(128, 128, 128, 1);
+  color: white;
+  animation: boxShadowColorChange 5s linear infinite;
+}
+
+input::placeholder{
+  color: white;
+}
+
+.btncc{
+  padding: 15px;
+}
+
+.sendd { 
+  padding: 1em 2em;
+  background: #111;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: transform 0.2s;
+  width: 200px;
+  animation: boxShadowColorChange 5s linear infinite;
+}
+.sendd:hover {
+  transform: translateY(-4px);
 }
