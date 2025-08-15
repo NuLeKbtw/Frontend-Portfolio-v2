@@ -161,17 +161,17 @@ $('#e-mail').hover(function() {
     .css('cursor', 'pointer')
 })
 
-$('.sendd').hover(function(){
-    $(this)
-    .css({
-        'width': '300px',
-        'transition': '0.5s',
+
+$(function(){
+    let full = $('.fullib');
+    $('.sendd').click(function(){
+
+        let namemail = $('#name').val().trim();
+        if (namemail === '') return;
+
+        $(full).fadeOut(500);
+
+        let textcreate = `<p> Thank you for the information, <strong>${namemail}</strong>. If you want to contact me, you can find my Discord on GitHub. </p>`
+        $('#afterclick').append(textcreate)
     })
-    },
-    function(){
-        $(this).css({
-            'width': '200px',
-            'transition': '0.5s',
-        })
-    }
-)
+})

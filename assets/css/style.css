@@ -315,3 +315,19 @@ input::placeholder{
 .sendd:hover {
   transform: translateY(-4px);
 }
+#afterclick{
+  font-size: 28px;
+  color: white;
+  margin-top: 10px;
+}
+#afterclick p{
+  padding: 5px;
+  color: white;
+  text-shadow: 0 0 40px black;
+}
+
+
+li a:hover {
+  color: rgb(179, 41, 41);
+  transition: 0.5s;
+}
